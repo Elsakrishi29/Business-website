@@ -35,6 +35,14 @@ $('.test-slide').owlCarousel({
     }
 });
 
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
+function handleShow(){
+    document.querySelector('.navbar-toggler').style.display = 'none';
+    document.querySelector('.navbar-collapse').style.display = 'block';
+
+}
+
+function handleHide(){
+    document.querySelector('.navbar-toggler').style.display = 'block';
+    document.querySelector('.navbar-collapse').style.display = 'none';
+
+}

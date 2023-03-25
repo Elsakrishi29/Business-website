@@ -3,6 +3,9 @@
 	margin:0;
 	box-sizing:border-box;
 }
+#about,#services,#departments,#doctors,#contact{
+	padding: 30px 0px;
+}
 .nav-button a button{
 	border:1px solid #3fbbc0;
 	background-color:#3fbbc0;
@@ -257,7 +260,7 @@ p{
 	
 .doctors-icon{
 	bottom:90px;
-	
+	width: 100%;
 }
 .doctors-icon i{
 	color:black;
@@ -497,4 +500,23 @@ p a{
 	align-items:center;
 	justify-content:center;
 	color:white;
+}
+@media (min-width:320px){
+	.container{
+		width:90% !important;
+	}
+	.nav-img{
+		width:250px;
+	}
+}
+@media (min-width: 996px){
+	.navbar-toggler{
+		display: none !important;
+	}
+	.container{
+		width:100% !important;
+	}
+	.nav-img{
+		width:300px;
+	}
 }

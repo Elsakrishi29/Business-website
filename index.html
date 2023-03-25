@@ -40,22 +40,22 @@
 								<div class="collapse navbar-collapse" id="navbarSupportedContent">
 									<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 										<li class="nav-item">
-											<a class="nav-link active" aria-current="page" href="#">HOME</a>
+											<a class="nav-link active" aria-current="page" href="#" onclick="handleHide()">HOME</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#about">ABOUT</a>
+											<a class="nav-link" href="#about" onclick="handleHide()">ABOUT</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#services">SERVICES</a>
+											<a class="nav-link" href="#services" onclick="handleHide()">SERVICES</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#departments">DEPARTMENTS</a>
+											<a class="nav-link" href="#departments" onclick="handleHide()">DEPARTMENTS</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#doctors">DOCTORS</a>
+											<a class="nav-link" href="#doctors" onclick="handleHide()">DOCTORS</a>
 										</li>
 										<li class="nav-item dropdown">
-											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="handleHide()">
 												Drop Down 
 											</a>
 										  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -69,7 +69,7 @@
 										  </ul>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#contact">CONTACT</a>
+											<a class="nav-link" href="#contact" onclick="handleHide()">CONTACT</a>
 										</li>	
 										<div class="nav-button">
 											<a href=""><button class="btn btn-success me-2" type="button">Make an Appoinment</button></a>
@@ -79,7 +79,7 @@
 									
 								</div>
 									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-										<span class="navbar-toggler-icon" style="width:20px;height:20px"></span>
+										<span class="navbar-toggler-icon" style="width:20px;height:20px" onclick="handleShow()"></span>
 									</button>								
 						</div>
 					  
@@ -89,9 +89,9 @@
 			
 								<!--==========WELCOME TO MEDICIO============-->
 			
-		<div class="container-fluid">
+		<div class="container-fluid" id="gototop">
 			<div class="row">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 px-0">
 					<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 					  <div class="carousel-indicators">
 						  <button type="button" data-bs-target="#CarouselExampleCaptions"  data-slide-to="0" class="active circle rounded-circle" aria-current="true" aria-label="slide-1"></button>
@@ -115,7 +115,7 @@
 							<div class="slide-img">
 								<img src="slide/slide-2.jpg" class="d-block w-100" alt="...">
 							</div>	
-						  <div class="carousel-caption d-none d-md-block content-border">
+						  <div class="carousel-caption d-md-block content-border">
 							<h2 class="font-color">Sequi ea ut et est quaerat</h2>
 							<p class="fontp-color">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
 							<div class="home-button">
@@ -127,7 +127,7 @@
 							<div class="slide-img">
 								<img src="slide/slide-3.jpg" class="d-block w-100" alt="...">
 							</div>
-						  <div class="carousel-caption d-none d-md-block content-border">
+						  <div class="carousel-caption d-md-block content-border">
 							<h2 class="font-color">Lorem Ipsum Dolor</h2>
 							<p class="fontp-color">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
 							<div class="home-button">
@@ -197,7 +197,7 @@
 		
 		<div class="container-fluid">
 			<div class="row mt-5">
-				<div class="col border">
+				<div class="col-12 border">
 					<div class="text-center">
 						<h2 class="pt-5 head-color">In an emergency? Need help now?</h2>
 						<p class="px-5 para-color">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -211,10 +211,10 @@
 		
 												<!--==========ABOUT SECTION============-->
 		
-		<div class="container">
+		<div class="container" id="about">
 			<div class="text-center mt-5">
 			<div class="about">
-				<h2 id="about">ABOUT US</h2>
+				<h2 >ABOUT US</h2>
 				<div class="about-border">
 				
 				</div>
@@ -223,16 +223,16 @@
 			</div>
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-					<div class="about-img">
+					<div class="about-img pt-2">
 						<img src="about.jpg">
 					</div>
 				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 pt-2">
 					<h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
 					<i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i>
-					<p class="pt-3"><i class="fa fa-check tick"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<p><i class="fa fa-check tick"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-					<p><i class="fa fa-check tick"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+					<p class="pt-3"><i class="fa fa-check tick"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p><i class="fa fa-check tick"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+					<p><i class="fa fa-check tick"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
 					<p class="pt-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 				</div>
 			</div>
@@ -333,9 +333,9 @@
 			
 												<!--==========SERVICE SECTION============-->
 			
-			<div class="container">
+			<div class="container" id="services">
 				<div class="text-center mt-5">
-					<h2 id="services">SERVICES</h2>
+					<h2 id="services mt-5">SERVICES</h2>
 					<div class="about-border">
 				
 					</div>
@@ -378,8 +378,6 @@
 							<p class="pt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
 						</div>
 					</div>
-				</div>
-				<div class="row">
 					<div class="col-12 col-sm-12 col-md-6 col-lg-4  text-center">
 						<div class="">
 							<div class="service-icon">
@@ -485,9 +483,9 @@
 			
 											<!--==========DEPARTMENTS SECTION============-->
 			
-			<div class="container">
-				<div class="text-center mt-5">
-					<h2 class="pt-5" id="departments">DEPARTMENTS</h2>
+			<div class="container" id="departments">
+				<div class="text-center mt-3">
+					<h2 class="pt-5">DEPARTMENTS</h2>
 						<div class="about-border">
 				
 						</div>
@@ -649,10 +647,10 @@
 												<!--==========DOCTORS SECCTION==========-->
 								
 				<section>
-			<div class="container-fluid bg-clr">
+			<div class="container-fluid bg-clr" id="doctors">
 				<div class="container">
 					<div class="text-center mt-5">
-						<h2 class="pt-5" id="doctors">DOCTORS</h2>
+						<h2 class="pt-5">DOCTORS</h2>
 							<div class="about-border">
 				
 							</div>
@@ -682,7 +680,7 @@
 							 <div class="doctors-img position-relative">
 									<img src="doctors/doctors-2.jpg" class="card-img-top" alt="...">
 								</div>
-								<div class="doctors-icon position-absolute">
+								<div class="doctors-icon position-absolute" style="width: 100%;">
 									<a href="#"><i class="fa fa-twitter doc-twit"></i></a>
 									<a href="#"><i class="fa fa-facebook doc-fb"></i></a>
 									<a href="#"><i class="fa fa-instagram doc-inst"></i></a>
@@ -740,7 +738,7 @@
 			  <div class="container">
 
 				<div class="section-title text-center">
-					<h2>Gallery</h2>
+					<h2 class="mt-5">Gallery</h2>
 					<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 				</div>
 
@@ -971,9 +969,9 @@
 													<!--==========CONTACT==========-->
 													
 			<section>
-				<div class="container">
+				<div class="container" id="contact">
 					<div class="text-center mt-5">
-							<h2 class="pt-5" id="contact">CONTACT</h2>
+							<h2 class="pt-5">CONTACT</h2>
 							  <div class="about-border">
 				
 							  </div>
@@ -1001,7 +999,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col">
+								<div class="col-sm-12 col-md-12 col-lg-6">
 								<div class="shadow-sm p-3 mb-5 bg-body rounded">
 									<div class="contact-icon">
 										<i class="bx bx-envelope"></i>
@@ -1011,7 +1009,7 @@
 									<p>contact@example.com</p>
 								</div>	
 								</div>
-								<div class="col">
+								<div class="col-sm-12 col-md-12 col-lg-6">
 								<div class="shadow-sm p-3 mb-5 bg-body rounded">
 									<div class="contact-icon">
 										<i class="bx bx-phone-call"></i>
